@@ -6,6 +6,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   test: {
-    environment: 'jsdom' // Use jsdom to simulate a browser-like environment
+    environment: 'jsdom',
+    setupFiles: './setupTest.ts' // Use jsdom to simulate a browser-like environment
   }
 })
